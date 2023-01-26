@@ -1,0 +1,43 @@
+{
+  "name": "acme/commission-calculator",
+  "description": "Commission calculator for Acme corp.",
+  "keywords": [],
+  "type": "project",
+  "autoload": {
+    "psr-4": {
+      "Acme\\": "src"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "Acme\\Tests\\": "tests"
+    }
+  },
+  "require": {
+    "php": ">=8.1",
+    "ext-bcmath": "*",
+    "ext-intl": "*",
+    "symfony/runtime": "^6.2",
+    "webmozart/assert": "^1.11"
+  },
+  "require-dev": {
+    "phpunit/phpunit": "*",
+    "friendsofphp/php-cs-fixer": "*"
+  },
+  "config": {
+    "sort-packages": true,
+    "bin-dir": "bin",
+    "allow-plugins": {
+      "symfony/runtime": true
+    }
+  },
+  "scripts": {
+    "phpunit": "phpunit",
+    "fix-cs": "php-cs-fixer fix",
+    "test-cs": "php-cs-fixer fix --dry-run -v",
+    "test": [
+      "@phpunit",
+      "@test-cs"
+    ]
+  }
+}
