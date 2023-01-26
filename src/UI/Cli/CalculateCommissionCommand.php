@@ -6,7 +6,6 @@ namespace Acme\UI\Cli;
 
 use Acme\Commission\Application\Command\CalculateCommissionFee\CalculateCommissionFeeFromFileCommand;
 use Acme\Commission\Application\Command\CalculateCommissionFee\CalculateCommissionFeeFromFileHandler;
-use Acme\Service\Math;
 use Symfony\Component\Console\Command\Command;
 use Symfony\Component\Console\Input\InputInterface;
 use Symfony\Component\Console\Output\OutputInterface;

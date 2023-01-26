@@ -12,7 +12,6 @@ final class HttpInMemoryProvider implements ProviderInterface
 
     private array $rates = [];
 
-
     public function __construct(string $uri)
     {
         $this->uri = $uri;

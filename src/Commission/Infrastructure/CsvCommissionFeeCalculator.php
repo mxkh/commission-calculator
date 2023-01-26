@@ -4,10 +4,10 @@ declare(strict_types=1);
 
 namespace Acme\Commission\Infrastructure;
 
-use Acme\Commission\Domain\Money;
-use Acme\Commission\Domain\IterableRepositoryInterface;
 use Acme\Commission\Domain\CommissionFeeCalculatorContext;
 use Acme\Commission\Domain\CommissionFeeCalculatorInterface;
+use Acme\Commission\Domain\IterableRepositoryInterface;
+use Acme\Commission\Domain\Money;
 use Acme\Shared\Currency\Rate\Provider\HttpInMemoryProvider;
 
 final class CsvCommissionFeeCalculator implements CommissionFeeCalculatorInterface
